@@ -38,12 +38,20 @@
     [activityIndicatorView startAnimating];
     [container addSubview:activityIndicatorView];
     [[UIApplication sharedApplication].keyWindow addSubview:container];
+    container.alpha = 0.0;
+    [UIView animateWithDuration:0.5 animations:^{
+        container.alpha = 1.0;
+    }];
 }
 
 - (void)hide {
-    [activityIndicatorView stopAnimating];
-    [activityIndicatorView removeFromSuperview];
-    [container removeFromSuperview];
+    [UIView animateWithDuration:0.5 animations:^{
+        container.alpha = 0.0;
+    } completion:^(BOOL finished) {
+        [activityIndicatorView stopAnimating];
+        [activityIndicatorView removeFromSuperview];
+        [container removeFromSuperview];
+    }];
 }
 
 @end
