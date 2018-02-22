@@ -54,3 +54,8 @@
         ```
     [[ERProgressHud sharedInstance] hide];
     ```
+    
+## License
+ERProgressHud is released under the MIT license. See LICENSE for details.
+
+
