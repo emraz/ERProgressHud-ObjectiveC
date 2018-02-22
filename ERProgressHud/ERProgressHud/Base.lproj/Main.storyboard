@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="z0V-gs-cgK">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZC-Cb-0Z7">
+                                <rect key="frame" x="40" y="576" width="295" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Dark Background without Title">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showProgressHudWithDarkBGNoTitle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="igY-l9-JwD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBA-hq-Ivu">
+                                <rect key="frame" x="40" y="614" width="295" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Blur Background without Title">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showProgressHudWithBlurBGNoTitle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pne-dp-ASV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKK-ft-MSf">
+                                <rect key="frame" x="40" y="652" width="295" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Transparent Background with Title">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showProgressHudWithTitleNoBG:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QQF-ek-axe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zan-3C-5aW">
+                                <rect key="frame" x="40" y="690" width="295" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Blur Background with Title">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showProgressHudWithTitleandBlurBG:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wur-WJ-Bn1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="212-eg-NeP">
+                                <rect key="frame" x="40" y="728" width="295" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Dark Background with Title">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showProgressHudWithTitleandDarkBG:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PDM-4X-Uon"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zan-3C-5aW" firstAttribute="top" secondItem="oKK-ft-MSf" secondAttribute="bottom" constant="8" id="0pn-2f-4TL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gBA-hq-Ivu" secondAttribute="trailing" constant="40" id="2gh-Ki-rlc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="212-eg-NeP" secondAttribute="trailing" constant="40" id="9FT-om-K57"/>
+                            <constraint firstItem="z0V-gs-cgK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Fsb-yo-yvp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="z0V-gs-cgK" secondAttribute="bottom" id="J0r-nF-1LY"/>
+                            <constraint firstItem="oKK-ft-MSf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="KAy-Bh-TQN"/>
+                            <constraint firstItem="oKK-ft-MSf" firstAttribute="top" secondItem="gBA-hq-Ivu" secondAttribute="bottom" constant="8" id="RrP-WF-Gg2"/>
+                            <constraint firstItem="cZC-Cb-0Z7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="SyG-Qc-vUa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="212-eg-NeP" secondAttribute="bottom" constant="20" id="VFI-t6-pAQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zan-3C-5aW" secondAttribute="trailing" constant="40" id="aGZ-bn-ORS"/>
+                            <constraint firstItem="z0V-gs-cgK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bZu-dL-YLX"/>
+                            <constraint firstItem="212-eg-NeP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="dDw-Vr-1el"/>
+                            <constraint firstItem="212-eg-NeP" firstAttribute="top" secondItem="Zan-3C-5aW" secondAttribute="bottom" constant="8" id="hYg-nk-aMU"/>
+                            <constraint firstItem="gBA-hq-Ivu" firstAttribute="top" secondItem="cZC-Cb-0Z7" secondAttribute="bottom" constant="8" id="iCA-iX-VhE"/>
+                            <constraint firstItem="gBA-hq-Ivu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="iMF-A0-Kyb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cZC-Cb-0Z7" secondAttribute="trailing" constant="40" id="nQR-tR-59G"/>
+                            <constraint firstItem="Zan-3C-5aW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="rFp-TJ-i51"/>
+                            <constraint firstItem="z0V-gs-cgK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vC1-9U-6lm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oKK-ft-MSf" secondAttribute="trailing" constant="40" id="zy7-bA-7y5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.26600985221674"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="576" height="1024"/>
+    </resources>
+</document>
