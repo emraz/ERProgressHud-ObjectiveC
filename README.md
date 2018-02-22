@@ -18,8 +18,9 @@
 
 ## Installation
 1. Download the least source files.
-2. Drag ERPogressHud/ERPogressHud folder to Xcode project.Make sure to select Copy items if needed.
+2. Drag ERPogressHud/ERPogressHud folder to Xcode project. Make sure to select Copy items if needed.
 3. In the source files where you need to use the library, import the header file.
+
 #import "ERProgressHud.h"
 
 ## How To Use
