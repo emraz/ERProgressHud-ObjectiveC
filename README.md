@@ -25,32 +25,32 @@
 
 ## How To Use
 
-// Simple ProgressHud without Title<br />
+// Show Simple ProgressHud without Title<br />
     ```
     [[ERProgressHud sharedInstance] show];
     ```
 
-// Blur Background View ProgressHud without Title<br />
+// Show Blur Background View ProgressHud without Title<br />
         ```
     [[ERProgressHud sharedInstance] showWithBlurView];
     ```
 
-// Simple ProgressHud with Title<br />
+// Show Transparent Background View ProgressHud with Title<br />
         ```
     [[ERProgressHud sharedInstance] showWithTitle:@"Loading..."];
     ```
 
-// Simple ProgressHud with Title<br />
+// Show Blur Background View ProgressHud with Title<br />
         ```
     [[ERProgressHud sharedInstance] showBlurViewWithTitle:@"Loading..."];
     ```
     
-// Simple ProgressHud with Title<br />
+// Show Dark Background View ProgressHud with Title<br />
         ```
     [[ERProgressHud sharedInstance] showDarkBackgroundViewWithTitle:@"Loading..."];
     ```
     
-// Hide ProgressHud<br />
+// Dismiss ProgressHud<br />
         ```
     [[ERProgressHud sharedInstance] hide];
     ```
