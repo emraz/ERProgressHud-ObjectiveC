@@ -196,5 +196,8 @@
     }];
 }
 
+- (void)updateProgressTitle:(NSString *)title {
+    textLabel.text = title;
+}
 
 @end

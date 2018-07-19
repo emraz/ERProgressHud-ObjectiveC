@@ -25,5 +25,6 @@
 - (void)showWithTitle:(NSString *)title;
 - (void)showDarkBackgroundViewWithTitle:(NSString *)title;
 - (void)showBlurViewWithTitle:(NSString *)title;
+- (void)updateProgressTitle:(NSString *)title;
 
 @end
